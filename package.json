@@ -1,0 +1,24 @@
+{
+  "name": "heroku-boilerplate",
+  "version": "1.0.0",
+  "engines": {
+    "node": "8.6.0",
+    "npm": "5.3.0"
+  },
+  "description": "A boilerplate projekt with Node.js API and Vue Client, for Heroku deployment",
+  "scripts": {
+    "start": "node index.js --prefix api",
+    "postinstall": "npm install --prefix api",
+    "heroku-postbuild": "npm install --prefix client && npm run build --prefix client"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kristofferdamborg/heroku-boilerplate.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kristofferdamborg/heroku-boilerplate/issues"
+  },
+  "homepage": "https://github.com/kristofferdamborg/heroku-boilerplate#readme"
+}
