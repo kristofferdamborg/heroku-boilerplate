@@ -1,9 +1,13 @@
 const express = require('express')
+var http = require('http');
+var enforce = require('express-sslify');
 const bodyParser = require('body-parser')
 const morgan = require('morgan')
 const config = require('./config/config')
 
 const app = express()
+
+app.use(enforce.HTTPS({ trustProtoHeader: true }))
 
 app.use(morgan('combined'))
 
