@@ -1,7 +1,7 @@
 # heroku-boilerplate
 A boilerplate projekt with Node.js API and Vue Client, for Heroku deployment
 
-## 1. Run "heroku create <app-name>" in root (you need to have Heroku CLI installed)
+## 1. Run "heroku create your-app-name" in root (you need to have Heroku CLI installed)
 ## 2. Run "heroku config:set NPM_CONFIG_PRODUCTION=false" in root, to make sure that devDependencies in client gets installed on server
 ## 3. Git init + git add . + git commit + git push heroku master
 
