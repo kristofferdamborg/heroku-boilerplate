@@ -15,8 +15,8 @@ app.listen(config.port)
 
 if (process.env.NODE_ENV === 'production') {
   const path = require('path')
-  // Express will serve up production assets
-  app.use(express.static(path.resolve('client', 'dist'), { maxAge: '1d' }))
+  /* // Express will serve up production assets
+  app.use(express.static(path.resolve('client', 'dist'), { maxAge: '1d' })) */
 
   // Express will serve up the index.html file
   // if it doesn't recognize the route
